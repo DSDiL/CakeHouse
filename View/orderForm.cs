@@ -55,7 +55,6 @@ namespace CakeHouse.View
             {
                 MessageBox.Show(ex.Message);
             }
-           
         }
 
         private void orderID()

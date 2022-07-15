@@ -28,5 +28,54 @@ namespace CakeHouse.View
         {
             Application.Exit();
         }
+
+        private void addOrdersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            orderForm order = new orderForm();
+            order.Show();
+            this.Hide();
+        }
+
+        private void employeesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (loginForm.status.Equals("Admin"))
+            {
+                employeeForm employee = new employeeForm();
+                employee.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("You are not Authorized");
+            }
+        }
+
+        private void ordersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (loginForm.status.Equals("Admin"))
+            {
+                employeeForm employee = new employeeForm();
+                employee.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("You are not Authorized");
+            }
+        }
+
+        private void productsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (loginForm.status.Equals("Admin"))
+            {
+                employeeForm employee = new employeeForm();
+                employee.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("You are not Authorized");
+            }
+        }
     }
 }
