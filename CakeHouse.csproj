@@ -68,6 +68,12 @@
     <Compile Include="View\orderForm.Designer.cs">
       <DependentUpon>orderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\orderHandleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\orderHandleForm.Designer.cs">
+      <DependentUpon>orderHandleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\productForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\orderForm.resx">
       <DependentUpon>orderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\orderHandleForm.resx">
+      <DependentUpon>orderHandleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\productForm.resx">
       <DependentUpon>productForm.cs</DependentUpon>
